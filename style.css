@@ -19,6 +19,7 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    position: relative;
 }
 
 nav ul {
@@ -33,7 +34,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: white; 
     font-weight: bold;
 }
 
@@ -73,7 +74,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: black;  /* 🔹 লিংক কালো হবে */
+    color: black; /* 🔹 লিংক কালো হবে */
     font-size: 20px;
     font-weight: bold;
 }
@@ -92,6 +93,33 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Contact Page Styling */
+.contact-info {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-info p {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: black; /* 🔹 লিংক কালো থাকবে */
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    color: gray; /* 🔹 মাউস দিলে ধূসর দেখাবে */
+}
+
+.contact-info img {
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 /* Responsive Design */
