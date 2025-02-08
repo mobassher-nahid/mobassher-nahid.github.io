@@ -22,12 +22,15 @@ header {
     padding: 20px;
     font-size: 24px;
     width: 100%;
+    position: fixed; /* সবসময় উপরে থাকবে */
+    top: 0;
+    left: 0;
 }
 
 /* 🔙 Back to Home Arrow */
 .back-arrow {
     position: absolute;
-    top: 15px; /* Header-এর ভিতরে রাখার জন্য */
+    top: 15px;
     left: 15px;
 }
 
@@ -35,89 +38,17 @@ header {
     text-decoration: none;
     font-size: 28px; /* বড় করা হলো */
     font-weight: bold;
-    color: white; /* Header-এর সাথে মানানসই করতে */
+    color: white;
 }
 
 /* 📜 Main Content */
 main {
     width: 90%;
     max-width: 800px;
-    margin: 20px auto;
+    margin: 100px auto 20px auto; /* Header-এর জন্য উপরে জায়গা রাখা হলো */
     padding: 20px;
     background: #f8f8f8;
     border-radius: 5px;
-}
-
-/* 🔗 Navigation Links */
-nav {
-    text-align: center;
-    padding: 10px 0;
-}
-
-nav a {
-    color: black;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #007bff;
-}
-
-/* 📄 Blog Page Styles */
-.blog-container {
-    text-align: center;
-}
-
-.blog-post {
-    border-bottom: 1px solid #ddd;
-    padding: 15px 0;
-}
-
-.blog-post h3 {
-    margin-bottom: 10px;
-}
-
-.blog-post p {
-    color: #555;
-}
-
-.blog-post a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #007bff;
-    text-decoration: none;
-}
-
-.blog-post a:hover {
-    text-decoration: underline;
-}
-
-/* ℹ️ About Page */
-.about-container {
-    text-align: center;
-}
-
-/* 📞 Contact Page */
-.contact-container {
-    text-align: center;
-}
-
-.contact-container a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 0;
-}
-
-.contact-container img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
 }
 
 /* 📌 Footer */
@@ -128,4 +59,7 @@ footer {
     padding: 20px;
     margin-top: 20px;
     width: 100%;
+    position: fixed; /* সবসময় নিচে থাকবে */
+    bottom: 0;
+    left: 0;
 }
