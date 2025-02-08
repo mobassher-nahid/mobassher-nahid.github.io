@@ -21,6 +21,21 @@ header {
     text-align: center;
     padding: 20px;
     font-size: 24px;
+    width: 100%;
+}
+
+/* 🔙 Back to Home Arrow */
+.back-arrow {
+    position: absolute;
+    top: 15px; /* Header-এর ভিতরে রাখার জন্য */
+    left: 15px;
+}
+
+.back-arrow a {
+    text-decoration: none;
+    font-size: 28px; /* বড় করা হলো */
+    font-weight: bold;
+    color: white; /* Header-এর সাথে মানানসই করতে */
 }
 
 /* 📜 Main Content */
@@ -103,19 +118,6 @@ nav a:hover {
     width: 24px;
     height: 24px;
     margin-right: 10px;
-}
-
-/* 🔙 Back to Home Arrow */
-.back-arrow {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-.back-arrow a {
-    text-decoration: none;
-    font-size: 24px;
-    color: black;
 }
 
 /* 📌 Footer */
