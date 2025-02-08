@@ -8,11 +8,12 @@ body {
     text-align: center;
 }
 
-/* Header Styles */
+/* Header */
 header {
     background: black;
     color: white;
-    padding: 15px 0;
+    padding: 15px;
+    text-align: center;
 }
 
 header h1 {
@@ -36,9 +37,9 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Home Page Styles */
+/* Container for pages */
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 800px;
     margin: 20px auto;
     text-align: left;
@@ -48,18 +49,11 @@ nav a:hover {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Blog Page Styles */
-.blog-container {
-    width: 80%;
-    max-width: 800px;
-    margin: 20px auto;
-    text-align: left;
-}
-
+/* Blog Page */
 .blog-post {
     background: white;
     padding: 15px;
-    margin: 10px 0;
+    margin: 15px 0;
     border-radius: 5px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -82,7 +76,7 @@ nav a:hover {
 
 /* About Page */
 .about-container {
-    width: 80%;
+    width: 90%;
     max-width: 800px;
     margin: 20px auto;
     text-align: left;
@@ -94,7 +88,7 @@ nav a:hover {
 
 /* Contact Page */
 .contact-container {
-    width: 80%;
+    width: 90%;
     max-width: 800px;
     margin: 20px auto;
     text-align: left;
@@ -123,7 +117,11 @@ footer {
     background: black;
     color: white;
     padding: 15px;
-    margin-top: 20px;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 footer a {
@@ -148,4 +146,24 @@ footer a:hover {
 
 .back-button:hover {
     background: gray;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    
+    .container {
+        width: 95%;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    footer {
+        position: relative;
+    }
 }
