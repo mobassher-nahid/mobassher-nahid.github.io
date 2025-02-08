@@ -1,134 +1,129 @@
-/* General Page Styling */
-body {
-    font-family: 'Merriweather', serif;
-    background-color: #fff;
-    color: #000;
+/* 🌍 General Styles */
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Full screen cover করবে */
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
 }
 
-/* Header Styling */
+body {
+    background-color: #ffffff;
+    color: #333;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🏡 Header */
 header {
     background-color: #000;
-    color: #fff;
+    color: white;
     text-align: center;
     padding: 20px;
     font-size: 24px;
 }
 
-/* Navigation Menu */
+/* 📜 Main Content */
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 5px;
+}
+
+/* 🔗 Navigation Links */
 nav {
     text-align: center;
-    padding: 10px;
-    background: #111;
+    padding: 10px 0;
 }
 
 nav a {
-    color: white;
+    color: black;
     text-decoration: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    display: inline-block;
+    padding: 10px 15px;
+    font-weight: bold;
 }
 
 nav a:hover {
-    background: #444;
-    border-radius: 5px;
+    color: #007bff;
 }
 
-/* Main Content */
-main {
-    flex: 1; /* Content area automatically center হবে */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-}
-
-/* Footer Styling */
-footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-    font-size: 18px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Contact Page Icons */
-.contact-info {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.contact-info a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    margin: 10px;
-    color: #000;
-    text-decoration: none;
-}
-
-.contact-info a img {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-}
-
-/* Blog Page Styling */
+/* 📄 Blog Page Styles */
 .blog-container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
+    text-align: center;
 }
 
 .blog-post {
-    background: #f4f4f4;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
 }
 
-.blog-post h2 {
-    margin: 0;
+.blog-post h3 {
+    margin-bottom: 10px;
 }
 
 .blog-post p {
     color: #555;
 }
 
-/* ✅ Responsive Design for Mobile */
-@media (max-width: 768px) {
-    header {
-        font-size: 20px;
-        padding: 15px;
-    }
+.blog-post a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
 
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.blog-post a:hover {
+    text-decoration: underline;
+}
 
-    nav a {
-        display: block;
-        margin: 5px 0;
-        font-size: 16px;
-    }
+/* ℹ️ About Page */
+.about-container {
+    text-align: center;
+}
 
-    .blog-container {
-        width: 95%;
-    }
+/* 📞 Contact Page */
+.contact-container {
+    text-align: center;
+}
 
-    .contact-info a {
-        font-size: 16px;
-    }
+.contact-container a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.contact-container img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* 🔙 Back to Home Arrow */
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-arrow a {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+
+/* 📌 Footer */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
 }
