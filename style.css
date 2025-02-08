@@ -1,33 +1,29 @@
-/* 🌍 General Styles */
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Merriweather', serif;
 }
 
 body {
-    background-color: #ffffff;
-    color: #333;
-    width: 100%;
-    margin: 0;
+    font-family: 'Merriweather', serif;
+    background-color: white;
+    color: black;
+    text-align: center;
     padding: 0;
 }
 
-/* 🏡 Header */
+/* Header */
 header {
-    background-color: #000;
+    background-color: black;
     color: white;
-    text-align: center;
-    padding: 20px;
+    padding: 15px;
     font-size: 24px;
-    width: 100%;
-    position: fixed; /* সবসময় উপরে থাকবে */
-    top: 0;
-    left: 0;
+    text-align: center;
+    position: relative;
 }
 
-/* 🔙 Back to Home Arrow */
+/* Back Arrow */
 .back-arrow {
     position: absolute;
     top: 15px;
@@ -36,30 +32,37 @@ header {
 
 .back-arrow a {
     text-decoration: none;
-    font-size: 28px; /* বড় করা হলো */
+    font-size: 28px;
     font-weight: bold;
     color: white;
 }
 
-/* 📜 Main Content */
+/* Main Content */
 main {
-    width: 90%;
-    max-width: 800px;
-    margin: 100px auto 20px auto; /* Header-এর জন্য উপরে জায়গা রাখা হলো */
     padding: 20px;
-    background: #f8f8f8;
-    border-radius: 5px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
 }
 
-/* 📌 Footer */
+/* Footer */
 footer {
-    background-color: #000;
+    background-color: black;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     margin-top: 20px;
+    position: fixed;
     width: 100%;
-    position: fixed; /* সবসময় নিচে থাকবে */
     bottom: 0;
-    left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        font-size: 20px;
+    }
+    .back-arrow a {
+        font-size: 24px;
+    }
 }
