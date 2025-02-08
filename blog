@@ -1,1 +1,33 @@
+*/post -1/
 bangladesh-politics-awareness.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বাংলাদেশের রাজনৈতিক বাস্তবতা ও সচেতনতার প্রয়োজনীয়তা</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>বাংলাদেশের রাজনৈতিক বাস্তবতা ও সচেতনতার প্রয়োজনীয়তা</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>বাংলাদেশের রাজনৈতিক বাস্তবতা ও সচেতনতার প্রয়োজনীয়তা</h2>
+        <p>বাংলাদেশ স্বাধীনতার ৫৩ বছর পার করলেও এখনো...</p>
+        <p>...</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mobassher Nahid</p>
+    </footer>
+</body>
+</html>
